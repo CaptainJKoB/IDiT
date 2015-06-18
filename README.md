@@ -1,2 +1,2 @@
-# ImgEdit
-HTML5 Image editor
+# Idit
+Simple HTML5 Image editor for your needs :-)
