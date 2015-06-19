@@ -19,3 +19,4 @@ Future plans:
 * Save as .jpg, .png, etc.
 * Improve browser compatibility - **Now only Google Chrome** - Other browsers have graphical/freeze issues :(
 * Better UI
+* Layers
