@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Jakub Knoz">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Simple HTML5 Image Editor">
+    <link rel="shortcut icon" type="image/png" href="img/image.png">
+    <title>Idit - Image Editor</title>
+    <!--<link href='http://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <script type="application/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="application/javascript" src="js/FileSaver.min.js"></script>
+    <script type="application/javascript" src="js/canvas-toBlob.js"></script>
+    <script type="application/javascript" src="js/script.js"></script>
+    <script type="application/javascript" src="js/canvas.js"></script>
+    <script type="application/javascript" src="js/tools.js"></script>
+    <script type="application/javascript" src="js/filters/blur.js"></script>
+</head>
+
+<body>
+    <section id="menu">
+        <button id="nav-btn" class="open-nav ion-navicon-round">
+        </button>
+        <nav>
+            <ul>
+                <li id="ImgInpt">
+                    <button id="ImgIpt" class="ion-folder" title="Browse for image" onclick="openFile()"></button>
+                    <input id="inputFile" type="file" accept="image/x-png, image/gif, image/jpeg" style="display: none;">
+                </li>
+                <li id="SaveImg">
+                    <button class="ion-image" title="Save image" onclick="saveImage()" disabled></button>
+                </li>
+                <li id="Delete">
+                    <button class="ion-trash-a" title="Discard changes" onclick="clearCanvas()" disabled></button>
+                </li>
+                <li id="Author">
+                    <button class="ion-person" title="Authors website" onclick="redirect()"></button>
+                </li>
+            </ul>
+            <p><b>Author:</b>
+                <br> Jakub Knoz
+                <br>
+                <br>
+                <b>Version:</b>
+                <br>0.1-aplha
+            </p>
+        </nav>
+    </section>
+    <div id="promptCls">
+        <h1>Warning!</h1>
+        <p>Are you sure you want to clear the canvas?</p>
+        <button id="clear" onclick="clearDef()">Yes</button>
+        <button id="cancelCls" onclick="cancelCls()">Cancel</button>
+    </div>
+    <div id="blur"></div>
+    <section id="image">
+    </section>
+    <section id="tools">
+        <section id="type">
+            <h1>Tools</h1>
+            <ul id="tools-array">
+                <li id="">
+                    <button title="Brightness" onclick="selectTools('#Bright-Slide')" class="ion-contrast" disabled>
+                        <a></a>
+                    </button>
+                    <p>Brightness</p>
+                </li>
+                <li id="">
+                    <button title="Grayscale" onclick="selectTools('#Gray-Scale')" class="ion-stats-bars" disabled>
+                        <a></a>
+                    </button>
+                    <p>Grayscale</p>
+                </li>
+                <li id="">
+                    <button title="Sharpness" onclick="selectTools('#Sharp-Scale')" class="ion-qr-scanner" disabled>
+                        <a></a>
+                    </button>
+                    <p>Sharpness</p>
+                </li>
+                <li id="">
+                    <button title="Blur" onclick="selectTools('#Blur-Tools')" class="ion-radio-waves" disabled>
+                        <a></a>
+                    </button>
+                    <p>Blur</p>
+                </li>
+                <li id="">
+                    <button title="Draw" onclick="selectTools('#Draw-Tools')" class="ion-edit" disabled>
+                        <a></a>
+                    </button>
+                    <p>Draw</p>
+                </li>
+            </ul>
+        </section>
+        <section id="slider">
+            <h1 id="typeName"></h1>
+            <section id="Bright-Slide">
+                <form oninput="amount.value=brgsld.value">
+                    <input id="brgsld" name="brgsld" type="range" min="-100" max="100" value="0">
+                    <output name="amount" for="brgsld">0</output>
+                </form>
+            </section>
+            <section id="Gray-Scale">
+                <div id="enaGray">
+                    <label for="Gray" id="grayLbl"><b>Enable Grayscale</b>
+                    </label>
+                    <label>
+                        <input id="graysld" type="checkbox" name="Gray">
+                        <span></span>
+                    </label>
+                </div>
+            </section>
+            <section id="Sharp-Scale">
+                <form oninput="amount.value=sharpsld.value">
+                    <input id="sharpsld" name="sharpsld" type="range" min="1" max="10" value="1">
+                    <output name="amount" for="sharpsld">1</output>
+                </form>
+            </section>
+            <section id="Blur-Tools">
+                <form oninput="amount.value=blursld.value">
+                    <input id="blursld" name="blursld" type="range" min="0" max="16" value="1">
+                    <output name="amount" for="blursld">1</output>
+                </form>
+            </section>
+            <section id="Draw-Tools">
+                <div id="enaDraw">
+                    <label for="Drawing" id="drawLbl"><b>Enable Drawing</b>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="Drawing">
+                        <span></span>
+                    </label>
+                </div>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
