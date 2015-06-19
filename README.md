@@ -4,7 +4,7 @@ A student project.
 
 **[Application Website](http://idit.captainjkob.tk)**
 
-Current version of app is **0.1-alpha**
+Current version of app is **0.1-alpha_19062015**
 
 ##External scripts that are used:
 * [JQuery](http://jquery.com/download/)
