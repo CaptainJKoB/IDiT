@@ -5,7 +5,7 @@ Simple HTML5 Image editor for your needs :-)
 
 Current version of app is **0.1-alpha**
 
-External scripts that are used:
+##External scripts that are used:
 * [JQuery](http://jquery.com/download/)
 * [FileSaver.js](https://github.com/eligrey/FileSaver.js/)
 * [canvas-toBlob.js](https://github.com/eligrey/canvas-toBlob.js)
@@ -13,7 +13,7 @@ External scripts that are used:
 Icons:
 * [Ionicons](http://ionicons.com/) 
 
-Future plans:
+##Future plans:
 * Use external library for Filters
 * Resize, Crop, Mirror the Image
 * Save as .jpg, .png, etc.
@@ -22,4 +22,4 @@ Future plans:
 * Layers
 * Reverse/Image history
 
-[Changelog](https://github.com/CaptainJKoB/IDiT/blob/master/CHANGELOG)
+**[Changelog](https://github.com/CaptainJKoB/IDiT/blob/master/CHANGELOG)**
