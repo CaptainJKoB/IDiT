@@ -1,5 +1,6 @@
 # IDiT
 Simple HTML5 Image editor for your needs :-)
+A student project.
 
 **[Application Website](http://idit.captainjkob.tk)**
 
@@ -22,4 +23,4 @@ Icons:
 * Layers
 * Reverse/Image history
 
-**[Changelog](https://github.com/CaptainJKoB/IDiT/blob/master/CHANGELOG)**
+**[Changelog](https://github.com/CaptainJKoB/IDiT/blob/master/CHANGELOG.md)**
