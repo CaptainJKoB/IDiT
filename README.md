@@ -1,4 +1,4 @@
-# Idit
+# IDiT
 Simple HTML5 Image editor for your needs :-)
 
 **[Application Website](http://idit.captainjkob.tk)**
