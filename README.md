@@ -1,7 +1,7 @@
 # Idit
 Simple HTML5 Image editor for your needs :-)
 
-**[Application Website](idit.captainjkob.tk)**
+**[Application Website](http://idit.captainjkob.tk)**
 
 Version of app is **0.1-alpha**
 
