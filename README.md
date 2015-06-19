@@ -3,7 +3,7 @@ Simple HTML5 Image editor for your needs :-)
 
 **[Application Website](http://idit.captainjkob.tk)**
 
-Version of app is **0.1-alpha**
+Current version of app is **0.1-alpha**
 
 External scripts that are used:
 * [JQuery](http://jquery.com/download/)
@@ -21,3 +21,5 @@ Future plans:
 * Better UI
 * Layers
 * Reverse/Image history
+
+[Changelog](https://github.com/CaptainJKoB/IDiT/blob/master/CHANGELOG)
