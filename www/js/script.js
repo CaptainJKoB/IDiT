@@ -119,9 +119,21 @@ function cancelCls() {
 /*---End of Work with Image---*/
 
 /*Redirect to Author website*/
-function redirect() {
-    var win = window.open("http://captainjkob.tk", "_blank");
-    win.focus();
+function redirect(id) {
+    switch (id) {
+    case "Author":
+        {
+            var win = window.open("http://captainjkob.tk", "_blank");
+            win.focus();
+            break;
+        }
+    case "Github":
+        {
+            var win = window.open("https://github.com/CaptainJKoB/Idit", "_blank");
+            win.focus();
+            break;
+        }
+    }
 }
 
 /*---TOOLS---*/
