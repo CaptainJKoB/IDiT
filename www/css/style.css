@@ -259,6 +259,14 @@ nav ul li#Delete button:hover {
     background-color: #FFE066;
 }
 
+nav ul li#GitHub:active > button,
+nav ul li#GitHub button:focus,
+nav ul li#GitHub:hover,
+nav ul li#GitHub:hover > button,
+nav ul li#GitHub button:hover {
+    background-color: #333333;
+}
+
 nav ul li#Author:active > button,
 nav ul li#Author button:focus,
 nav ul li#Author:hover,
