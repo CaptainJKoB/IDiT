@@ -4,7 +4,7 @@ A student project.
 
 **[Application Website](http://idit.captainjkob.tk)**
 
-Current version of app is **0.1-alpha_19062015**
+Current version of app is **0.1-alpha_20062015**
 
 ##External scripts that are used:
 * [JQuery](http://jquery.com/download/)
@@ -24,3 +24,4 @@ Icons:
 * Reverse/Image history
 
 **[Changelog](https://github.com/CaptainJKoB/IDiT/blob/master/CHANGELOG.md)**
+**[Previous Versions](https://github.com/CaptainJKoB/IDiT/tree/versions)**
