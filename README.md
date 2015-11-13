@@ -3,7 +3,7 @@ Simple HTML5 Image editor for your needs :-)
 
 A student project.
 
-**[Application Website](http://idit.captainjkob.tk)**
+**[Application Website](http://idit.captainjkob.tk/history/alpha_1/index.html)**
 
 Current version of app is **0.1-alpha_20062015**
 
